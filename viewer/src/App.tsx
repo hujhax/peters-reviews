@@ -47,7 +47,7 @@ const App: React.FC = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('/peter_reviews_data.csv');
+        const response = await fetch('./peter_reviews_data.csv');
         if (!response.ok) throw new Error('Failed to load data');
         const csvText = await response.text();
         
